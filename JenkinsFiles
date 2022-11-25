@@ -53,7 +53,7 @@ pipeline {
                            }
                             }
                              }
-            'target\taskcheck-*.jar' ne correspond à rien : 'target' existe mais pas 'target\taskcheck-*.jar'
+
         
      
    }
