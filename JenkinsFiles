@@ -14,28 +14,28 @@ pipeline {
          stage('clean'){
             steps{
                  dir('projects/taskcheck'){
-                bat './mvnw clean'
+                bat 'mvn clean'
                  }
                   }
                        }
           stage('compile'){
                 steps{
                      dir('projects/taskcheck'){
-                bat './mvnw compile'
+                bat 'mvn compile'
                      }
                       }
                           }
             stage('test'){
                 steps{
                      dir('projects/taskcheck'){
-                bat './mvnw test'
+                bat 'mvn test'
                      }
                      }
                           }
             stage('package'){
                 steps{
                      dir('projects/taskcheck'){
-                             bat './mvnw package'
+                             bat 'mvn package'
                      }
                      }
                             }
